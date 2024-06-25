@@ -26,7 +26,7 @@ export default function  Signup() {
                     <Input onChange={(e) => setPassword(e.target.value)} labelCss={"text-black font-medium"}inputCss={"border border-black font-normal pl-1 mt-1.5 rounded outline-none"} Label={"Password"}  Placeholder={"1234"} Type={"password"} />
                 </div>
                  <Button onClick={async()=> {
-                      const response = await  axios.post("https://53783226-afd9-464e-b0cd-e26165dbc44a-00-3ok8fjfh90x9y.spock.replit.dev:3001/api/v1/user/signUp", {
+                      const response = await  axios.post("https://paytm-backend-one.vercel.app/api/v1/user/signUp", {
                         firstName,
                         lastName,
                         username,

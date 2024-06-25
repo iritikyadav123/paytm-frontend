@@ -34,7 +34,7 @@ export default function Save() {
                     </div>
                     <div className="mt-10">
                         <Button onClick={async() => {
-                          const a = await axios.post('https://53783226-afd9-464e-b0cd-e26165dbc44a-00-3ok8fjfh90x9y.spock.replit.dev:3001/api/v1/account/transfer', {
+                          const a = await axios.post('https://paytm-backend-one.vercel.app/api/v1/account/transfer', {
                                 to: id,
                                 ammount: ammount
                             }, {

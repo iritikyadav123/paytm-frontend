@@ -9,7 +9,7 @@ const[userData, setUserData]   =  useState([]);
 const[filter, setFilter] = useState([]);
 
   useEffect(() => {
-    axios.get("https://53783226-afd9-464e-b0cd-e26165dbc44a-00-3ok8fjfh90x9y.spock.replit.dev:3001/api/v1/user/bulk?filter=" + filter)
+    axios.get("https://paytm-backend-one.vercel.app/api/v1/user/bulk?filter=" + filter)
     .then(response => {
         setUserData(response.data.user)
     })

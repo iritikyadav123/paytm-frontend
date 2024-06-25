@@ -7,7 +7,7 @@ export default function Dashboard() {
     const[balance,setBalance] = useState(0);
     const[userData,setuserdata] = useState("");
     useEffect(()=>{
-          axios.get("https://53783226-afd9-464e-b0cd-e26165dbc44a-00-3ok8fjfh90x9y.spock.replit.dev:3001/api/v1/account/balance",{
+          axios.get("https://paytm-backend-one.vercel.app/api/v1/account/balance",{
             headers : {
                 Authorization :  "Bearer " + localStorage.getItem("token")
             }
@@ -18,7 +18,7 @@ export default function Dashboard() {
     },[])
 
     useEffect(()=>{
-        axios.get("https://53783226-afd9-464e-b0cd-e26165dbc44a-00-3ok8fjfh90x9y.spock.replit.dev:3001/api/v1/user/user",{
+        axios.get("https://paytm-backend-one.vercel.app/api/v1/user/user",{
           headers : {
               Authorization :  "Bearer " + localStorage.getItem("token")
           }
